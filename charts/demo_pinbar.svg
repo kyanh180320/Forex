@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="100%" height="100%" style="background-color: #131722; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+
+    <defs>
+        <linearGradient id="supportGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#2962ff" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#2962ff" stop-opacity="0.05"/>
+        </linearGradient>
+        <linearGradient id="riskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f23645" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#f23645" stop-opacity="0.05"/>
+        </linearGradient>
+        <linearGradient id="rewardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#089981" stop-opacity="0.05"/>
+            <stop offset="100%" stop-color="#089981" stop-opacity="0.2"/>
+        </linearGradient>
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b" />
+        </marker>
+    </defs>
+    
+<!-- Grid -->
+<line x1="70" y1="446.8" x2="850" y2="446.8" stroke="#2a2e39" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="862" y="450.8" fill="#787b86" font-size="11" font-family="monospace">1.0830</text>
+<line x1="70" y1="360.5" x2="850" y2="360.5" stroke="#2a2e39" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="862" y="364.5" fill="#787b86" font-size="11" font-family="monospace">1.0850</text>
+<line x1="70" y1="274.2" x2="850" y2="274.2" stroke="#2a2e39" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="862" y="278.2" fill="#787b86" font-size="11" font-family="monospace">1.0870</text>
+<line x1="70" y1="187.9" x2="850" y2="187.9" stroke="#2a2e39" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="862" y="191.9" fill="#787b86" font-size="11" font-family="monospace">1.0890</text>
+<line x1="70" y1="101.6" x2="850" y2="101.6" stroke="#2a2e39" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="862" y="105.6" fill="#787b86" font-size="11" font-family="monospace">1.0910</text>
+<!-- Header -->
+<rect x="0" y="0" width="960" height="55" fill="#1e222d"/>
+<circle cx="30" cy="28" r="7" fill="#2962ff"/>
+<text x="50" y="33" fill="#d1d4dc" font-size="16" font-weight="700">EUR/USD • 1H</text>
+<text x="180" y="33" fill="#089981" font-size="14" font-weight="600">1.0870 (+0.32%)</text>
+<text x="340" y="33" fill="#9598a1" font-size="13">Bài học minh họa: Mô hình nến Pin Bar đảo chiều tại Hỗ trợ (Support)</text>
+<!-- Support Zone -->
+<rect x="70" y="420.9" width="780" height="43.2" fill="url(#supportGrad)" stroke="#2962ff" stroke-width="1.5" stroke-dasharray="4,4"/>
+<rect x="85" y="400.9" width="180" height="20" rx="3" fill="#2962ff" fill-opacity="0.8"/>
+<text x="92" y="414.9" fill="#ffffff" font-size="11" font-weight="600">🛡️ VÙNG HỖ TRỢ (SUPPORT ZONE)</text>
+<!-- Trade Box TP / SL -->
+<rect x="510.5" y="144.7" width="298.6" height="215.8" fill="url(#rewardGrad)" stroke="#089981" stroke-width="1" stroke-dasharray="2,2"/>
+<rect x="510.5" y="360.5" width="298.6" height="107.9" fill="url(#riskGrad)" stroke="#f23645" stroke-width="1" stroke-dasharray="2,2"/>
+<line x1="510.5" y1="360.5" x2="850" y2="360.5" stroke="#2962ff" stroke-width="2"/>
+<rect x="855" y="349.5" width="88" height="22" rx="3" fill="#2962ff"/>
+<text x="860" y="364.5" fill="#ffffff" font-size="10" font-weight="700">ENTRY: 1.0850</text>
+<line x1="510.5" y1="144.7" x2="850" y2="144.7" stroke="#089981" stroke-width="2"/>
+<rect x="855" y="133.7" width="88" height="22" rx="3" fill="#089981"/>
+<text x="860" y="148.7" fill="#ffffff" font-size="10" font-weight="700">TP (+50p): 1.0900</text>
+<line x1="510.5" y1="468.4" x2="850" y2="468.4" stroke="#f23645" stroke-width="2"/>
+<rect x="855" y="457.4" width="88" height="22" rx="3" fill="#f23645"/>
+<text x="860" y="472.4" fill="#ffffff" font-size="10" font-weight="700">SL (-25p): 1.0825</text>
+<rect x="520.4545454545455" y="332.5263157894762" width="100" height="20" rx="3" fill="#131722" stroke="#2962ff" stroke-width="1"/>
+<text x="528.4545454545455" y="346.5263157894762" fill="#089981" font-size="11" font-weight="700">Tỷ lệ R:R = 1 : 2</text>
+<!-- Candlesticks -->
+<line x1="140.9" y1="101.6" x2="140.9" y2="196.5" stroke="#f23645" stroke-width="2"/>
+<rect x="128.9" y="123.2" width="24" height="56.1" fill="#f23645" rx="1"/>
+<text x="140.9" y="515" fill="#787b86" font-size="11" text-anchor="middle">09:00</text>
+<line x1="211.8" y1="153.4" x2="211.8" y2="252.6" stroke="#f23645" stroke-width="2"/>
+<rect x="199.8" y="179.3" width="24" height="60.4" fill="#f23645" rx="1"/>
+<text x="211.8" y="515" fill="#787b86" font-size="11" text-anchor="middle">10:00</text>
+<line x1="282.7" y1="209.5" x2="282.7" y2="308.7" stroke="#f23645" stroke-width="2"/>
+<rect x="270.7" y="239.7" width="24" height="56.1" fill="#f23645" rx="1"/>
+<text x="282.7" y="515" fill="#787b86" font-size="11" text-anchor="middle">11:00</text>
+<line x1="353.6" y1="274.2" x2="353.6" y2="369.2" stroke="#f23645" stroke-width="2"/>
+<rect x="341.6" y="295.8" width="24" height="64.7" fill="#f23645" rx="1"/>
+<text x="353.6" y="515" fill="#787b86" font-size="11" text-anchor="middle">12:00</text>
+<line x1="424.5" y1="338.9" x2="424.5" y2="412.3" stroke="#f23645" stroke-width="2"/>
+<rect x="412.5" y="360.5" width="24" height="43.2" fill="#f23645" rx="1"/>
+<text x="424.5" y="515" fill="#787b86" font-size="11" text-anchor="middle">13:00</text>
+<line x1="495.5" y1="360.5" x2="495.5" y2="455.5" stroke="#089981" stroke-width="2"/>
+<rect x="483.5" y="377.8" width="24" height="25.9" fill="#089981" rx="1"/>
+<text x="495.5" y="515" fill="#787b86" font-size="11" text-anchor="middle">14:00</text>
+<circle cx="495.5" cy="445.5" r="18" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3,3"/>
+<path d="M 465.5 500.5 L 490.5 463.5" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="345.5" y="503.5" width="200" height="42" rx="5" fill="#1e222d" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="355.5" y="521.5" fill="#f59e0b" font-size="12" font-weight="700">★ Nến PIN BAR RÚT CHÂN</text>
+<text x="355.5" y="537.5" fill="#d1d4dc" font-size="10">Râu nến dài từ chối giá tại Support</text>
+<line x1="566.4" y1="265.6" x2="566.4" y2="382.1" stroke="#089981" stroke-width="2"/>
+<rect x="554.4" y="274.2" width="24" height="94.9" fill="#089981" rx="1"/>
+<text x="566.4" y="515" fill="#787b86" font-size="11" text-anchor="middle">15:00</text>
+<line x1="637.3" y1="187.9" x2="637.3" y2="282.8" stroke="#089981" stroke-width="2"/>
+<rect x="625.3" y="196.5" width="24" height="77.7" fill="#089981" rx="1"/>
+<text x="637.3" y="515" fill="#787b86" font-size="11" text-anchor="middle">16:00</text>
+<line x1="708.2" y1="166.3" x2="708.2" y2="231.1" stroke="#f23645" stroke-width="2"/>
+<rect x="696.2" y="196.5" width="24" height="12.9" fill="#f23645" rx="1"/>
+<text x="708.2" y="515" fill="#787b86" font-size="11" text-anchor="middle">17:00</text>
+<line x1="779.1" y1="92.9" x2="779.1" y2="222.4" stroke="#089981" stroke-width="2"/>
+<rect x="767.1" y="123.2" width="24" height="86.3" fill="#089981" rx="1"/>
+<text x="779.1" y="515" fill="#787b86" font-size="11" text-anchor="middle">18:00</text>
+<rect x="70" y="525" width="780" height="25" rx="4" fill="#1e222d"/>
+<text x="85" y="542" fill="#787b86" font-size="11">📌 Quy tắc: Chờ nến Pin Bar đóng cửa kiểm tra vùng hỗ trợ ➔ Mua khi nến tiếp theo phá đỉnh Pin Bar ➔ SL dưới đáy nến ➔ TP tại kháng cự kế tiếp.</text>
+</svg>
