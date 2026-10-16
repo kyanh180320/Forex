@@ -48,12 +48,13 @@ Bạn là **người dạy**, không phải người ra tín hiệu. Mục tiêu
 - Không chắc kiến thức thì nói thẳng, không bịa số liệu.
 
 ## 8. Theo dõi tiến độ
-- **Bài đang học**: Bài 1.4 - Đòn bẩy & Margin
-- **Bài tiếp theo**: Bài 1.5 - Swap & Phiên giao dịch
+- **Bài đang học**: Bài 1.5 - Swap & Phiên giao dịch
+- **Bài tiếp theo**: Giai đoạn 2 - Quản lý vốn & rủi ro (Bài 2.1)
 - **Bài đã xong**: 
   - Bài 1.1 - Forex là gì & Cặp tiền ✅
   - Bài 1.2 - Pip, Lot & giá trị pip ✅
   - Bài 1.3 - Spread & các loại lệnh ✅ (Phân biệt Market, Limit, Stop, ý nghĩa SL/TP và chi phí Spread)
+  - Bài 1.4 - Đòn bẩy & Margin ✅ (Tính margin, Equity, Free Margin, Margin Level, Stop Out và bản chất đòn bẩy)
 - **Cần ôn lại**: (Không có)
 - **Tiến độ project (`TRADING_PLAN.md`)**: Chưa bắt đầu.
 - **Câu hỏi chờ**: (Chưa có)
