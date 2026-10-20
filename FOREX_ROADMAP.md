@@ -49,7 +49,7 @@ Mỗi giai đoạn lắp thêm 1 mảnh vào file `TRADING_PLAN.md`:
 - **Lý thuyết:** quy tắc 1-2%, công thức `Lot = (Vốn x %rủi ro) / (số pip SL x giá trị 1 pip/lot)`.
 - **Bài tập:** vốn 1000 USD, rủi ro 1%, SL 20 pip, tính lot. Tự đổi 5 bộ số khác nhau.
 
-### 2.2. Tỷ lệ R:R & Kỳ vọng lợi nhuận
+### 2.2. Tỷ lệ R:R & Kỳ vọng lợi nhuận ✅ *(Đã hoàn thành)*
 - **Lý thuyết:** R:R, winrate, kỳ vọng (expectancy), cách đo kết quả bằng đơn vị **R** (1R = số tiền rủi ro mỗi lệnh).
 - **Bài tập:** thắng 40% với R:R 1:2, kỳ vọng dương hay âm? Thử thêm 3 tổ hợp winrate/R:R.
 
