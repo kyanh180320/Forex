@@ -53,7 +53,7 @@ Mỗi giai đoạn lắp thêm 1 mảnh vào file `TRADING_PLAN.md`:
 - **Lý thuyết:** R:R, winrate, kỳ vọng (expectancy), cách đo kết quả bằng đơn vị **R** (1R = số tiền rủi ro mỗi lệnh).
 - **Bài tập:** thắng 40% với R:R 1:2, kỳ vọng dương hay âm? Thử thêm 3 tổ hợp winrate/R:R.
 
-### 2.3. Drawdown & chuỗi thua
+### 2.3. Drawdown & chuỗi thua ✅ *(Đã hoàn thành)*
 - **Lý thuyết:** drawdown, vì sao chuỗi thua là bình thường, cần lãi bao nhiêu % để hòa vốn sau khi lỗ X%.
 - **Bài tập:** thua 10 lệnh liên tiếp với rủi ro 2% còn bao nhiêu vốn; lỗ 20% cần lãi bao nhiêu % để về hòa.
 - **Lý thuyết thêm:** vì sao **không** đặt "mục tiêu lãi cố định mỗi ngày" (ép vào lệnh xấu khi ngày không có kèo; cắt mất những cú thắng lớn).
@@ -65,27 +65,47 @@ Mỗi giai đoạn lắp thêm 1 mảnh vào file `TRADING_PLAN.md`:
 
 > Thứ tự: **Cấu trúc → Vùng giá → Đa khung → Nến (cò súng) → ATR**. Nến chỉ có ý nghĩa khi giá đã ở đúng vùng.
 
-### 3.1. Cấu trúc thị trường
+### 3.1. Cấu trúc thị trường ✅ *(Đã hoàn thành)*
 - **Lý thuyết:** đỉnh/đáy cao hơn/thấp hơn, uptrend/downtrend/sideway, Swing High/Low, BOS (phá cấu trúc tiếp diễn), CHoCH (đổi cấu trúc/đảo chiều).
-- **Bài tập:** đánh dấu cấu trúc trên 10 đoạn chart quá khứ, tự đối chiếu.
+- **Quy tắc vẽ (chốt cứng, không đổi trong 1 tháng):** Swing High/Low cần ít nhất 2 cây thấp hơn/cao hơn mỗi bên. Ghi quy tắc vào `TRADING_PLAN.md`, không tự sửa sau khi thua lệnh.
+- **Phân biệt Trending vs Ranging:** Trending = HH/HL hoặc LH/LL rõ ràng → dùng BOS/CHoCH. Ranging = đỉnh đáy ngang hàng → dùng chiến lược mua S bán R, không tìm BOS.
+- **Bài tập:** đánh dấu cấu trúc trên 30 đoạn chart quá khứ (5 phút/chart), phân loại trending hay ranging, lưu thành thư viện ảnh để xem lại.
 
-### 3.2. Vùng giá quan trọng (Support/Resistance & Cung cầu)
-- **Lý thuyết:** vùng hỗ trợ/kháng cự, vùng cung cầu, vì sao giá phản ứng ở vùng; vùng mạnh (nơi bắt đầu con sóng phá cấu trúc) vs vùng yếu; **phá vỡ giả (false breakout)** – giá quét qua vùng rồi quay lại.
-- **Bài tập:** vẽ vùng trên 1 cặp tiền, hôm sau kiểm tra giá có tôn trọng vùng không; tìm 3 ví dụ phá vỡ giả trên chart quá khứ.
+### 3.2. Vùng giá quan trọng (Support/Resistance & Supply/Demand) ✅ *(Đã hoàn thành)*
+- **Lý thuyết:** vùng hỗ trợ/kháng cự; Supply/Demand là cách vẽ chặt hơn (vùng có impulse mạnh rời đi + chưa được test lại = ưu tiên); Role Reversal; false breakout.
+- **Quy tắc vẽ (chốt cứng):** vẽ theo thân nến (không phải bóng nến); ưu tiên vùng trên H4/D1; vùng quá cũ (giá đã test lại 3+ lần) giảm ưu tiên. Ghi vào `TRADING_PLAN.md`, không vẽ lại vùng sau khi thua.
+- **Checklist chất lượng vùng (đếm được):**
+  1. Chưa hoặc ít được test lại (fresh)
+  2. Có impulse mạnh rời khỏi vùng
+  3. Trùng với khung lớn hơn (H4/D1 xác nhận H1)
+  4. Có confluence: round number, swing cũ, vùng overlap S/R và SD
+  5. Thời gian giá ở trong vùng ngắn (giá rời nhanh)
+- **Bài tập:** vẽ cùng 1 chart bằng 2 cách (S/R ngang và SD theo impulse); chọn cách nào rõ ràng hơn với bạn rồi bỏ cách kia; tìm 3 ví dụ false breakout.
 
-### 3.3. Khung thời gian (Multi-timeframe)
+### 3.3. Khung thời gian (Multi-timeframe) ✅ *(Đã hoàn thành)*
 - **Lý thuyết:** khung lớn (D1/H4) xác định xu hướng và vùng; khung nhỏ (H1/M15) tìm điểm vào.
+- **Luật bias (chốt cứng):** chỉ tìm lệnh theo hướng D1/H4. H1/M15 chỉ dùng để xác nhận entry, không dùng để xác định hướng. Pullback trên H1 trong uptrend D1 = cơ hội Buy, không phải tín hiệu Sell.
 - **Bài tập:** chọn 1 cặp, xác định trend ở D1/H4/H1, ghi nhận xét.
 
 ### 3.4. Nến Nhật làm tín hiệu
-- **Lý thuyết:** OHLC, thân nến, bóng nến; chỉ học 3-4 mẫu: Pinbar (từ chối giá), Engulfing (nhấn chìm), Fakey (phá vỡ giả).
-- **Bài tập:** chụp 5 cây nến **tại vùng giá quan trọng** trên chart quá khứ, mô tả nó nói gì; so với 3 cây cùng mẫu nhưng nằm giữa không gian (không ở vùng) để thấy sự khác nhau.
+- **Lý thuyết:** OHLC, thân nến, bóng nến; chỉ học 3 mẫu: Pinbar (từ chối giá), Engulfing (nhấn chìm), Fakey (phá vỡ giả + xác nhận).
+- **Quy tắc cứng:** nến chỉ hợp lệ khi nằm tại vùng S/R đã xác định trước. Nến cùng mẫu giữa khoảng trống = bỏ qua.
+- **Bài tập:** chụp 5 nến đẹp tại vùng quan trọng + 5 nến cùng mẫu nằm giữa khoảng trống; so sánh kết quả sau đó; ghi rõ với từng nến "được phép vào lệnh không? Vì sao?"
+
+### 3.4b. Liquidity — Thanh khoản & Stop Hunt
+- **Lý thuyết:** giá thường đi săn thanh khoản (stop loss đám đông) trước khi chạy thật; Equal Highs/Equal Lows = ổ thanh khoản hay bị quét; Inducement (dụ vào lệnh rồi quét); bản chất false breakout chính là liquidity sweep.
+- **Không cần học:** order block, FVG, ICT đầy đủ — giữ đơn giản.
+- **Bài tập:** tìm 3 ví dụ Equal High/Low bị quét trên chart quá khứ; xác định giá quét xong đi đâu.
 
 ### 3.5. ATR (độ biến động) & đặt SL
 - **Lý thuyết:** ATR đo biến động, dùng làm "đệm" để SL không bị quét oan.
 - **Bài tập:** tính SL = 1.5 x ATR cho 3 cặp tiền, so sánh khoảng cách SL.
 
-### 3.6. MA & RSI (đọc lướt, ~15 phút mỗi cái, không bắt làm bài tập sâu)
+### 3.6. Confluence — Đồng thuận điều kiện
+- **Lý thuyết:** setup A+ cần tối thiểu bao nhiêu điều kiện đồng thuận? Ví dụ: cấu trúc đúng hướng D1 + vùng mạnh chưa test nhiều + nến tín hiệu hợp lệ + ATR hợp lý + không gần tin lớn. Càng nhiều điều kiện đồng thuận thì xác suất càng cao — nhưng số lệnh ít hơn. Tìm điểm cân bằng phù hợp với bạn.
+- **Bài tập:** tự viết "Setup A+ của tôi cần tối thiểu X điều kiện", đưa vào `TRADING_PLAN.md`.
+
+### 3.7. MA & RSI (đọc lướt, ~15 phút mỗi cái, không bắt làm bài tập sâu)
 - **Lý thuyết:** MA/RSI đo cái gì, hay sai khi nào (sideway, trễ). Chỉ để biết chúng là gì.
 - **Bài tập:** viết 2-3 dòng mỗi cái. Nếu sau này hệ thống của bạn không dùng thì bỏ qua hẳn.
 
@@ -116,10 +136,12 @@ Mỗi giai đoạn lắp thêm 1 mảnh vào file `TRADING_PLAN.md`:
 
 ### 5.2. Luật SL, TP & quản lý lệnh
 - **Lý thuyết:** đặt SL ở đâu (sau vùng + đệm ATR), TP ở đâu (vùng đối diện/cấu trúc), có dời SL về hòa vốn không, chốt một phần.
+- **TP Management theo phản ứng giá:** khi giá tiếp cận vùng TP, đọc phản ứng — giá đâm thẳng qua (momentum mạnh) thì để chạy tiếp; giá khựng lại, xuất hiện nến đảo chiều thì cân nhắc chốt một phần hoặc dời SL về hòa vốn. Không tự cắt sớm vì sợ, không gồng mù khi giá đã cảnh báo.
 - **Bài tập:** bổ sung vào luật; thử áp dụng trên 10 tình huống chart quá khứ.
 
 ### 5.3. Kế hoạch giao dịch 1 trang
-- **Bài tập:** gộp toàn bộ luật vào `TRADING_PLAN.md`: cặp tiền, khung, giờ trade, vào, SL/TP, rủi ro, giới hạn ngày.
+- **No-trade rules (bắt buộc có trong kế hoạch):** không vào lệnh giữa vùng (mid-range, không có S/R rõ); không vào lệnh khi spread/volatility bất thường; không vào lệnh trong vòng 15-30 phút trước/sau tin lớn; không vào lệnh khi H4 và D1 xung đột chưa rõ hướng. Ghi thành danh sách cụ thể, dễ kiểm tra trước mỗi lệnh.
+- **Bài tập:** gộp toàn bộ luật vào `TRADING_PLAN.md`: cặp tiền, khung, giờ trade, điều kiện vào, SL/TP, rủi ro, giới hạn ngày, và danh sách No-trade rules.
 
 ### 5.4. Backtest bằng Bar Replay
 - **Lý thuyết:** backtest là gì, lỗi hay gặp (chọn lọc lệnh đẹp, **nhìn trước tương lai**). Không kéo chart tĩnh đã chạy xong; dùng **Bar Replay (TradingView)** hoặc FX Blue Trading Simulator để nến chạy từng cây, che phần bên phải.
