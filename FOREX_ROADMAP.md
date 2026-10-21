@@ -87,7 +87,7 @@ Mỗi giai đoạn lắp thêm 1 mảnh vào file `TRADING_PLAN.md`:
 - **Luật bias (chốt cứng):** chỉ tìm lệnh theo hướng D1/H4. H1/M15 chỉ dùng để xác nhận entry, không dùng để xác định hướng. Pullback trên H1 trong uptrend D1 = cơ hội Buy, không phải tín hiệu Sell.
 - **Bài tập:** chọn 1 cặp, xác định trend ở D1/H4/H1, ghi nhận xét.
 
-### 3.4. Nến Nhật làm tín hiệu
+### 3.4. Nến Nhật làm tín hiệu ✅ *(Đã hoàn thành)*
 - **Lý thuyết:** OHLC, thân nến, bóng nến; chỉ học 3 mẫu: Pinbar (từ chối giá), Engulfing (nhấn chìm), Fakey (phá vỡ giả + xác nhận).
 - **Quy tắc cứng:** nến chỉ hợp lệ khi nằm tại vùng S/R đã xác định trước. Nến cùng mẫu giữa khoảng trống = bỏ qua.
 - **Bài tập:** chụp 5 nến đẹp tại vùng quan trọng + 5 nến cùng mẫu nằm giữa khoảng trống; so sánh kết quả sau đó; ghi rõ với từng nến "được phép vào lệnh không? Vì sao?"
